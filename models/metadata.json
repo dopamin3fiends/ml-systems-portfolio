@@ -1,0 +1,16 @@
+{
+  "features": [
+    "sepal length (cm)",
+    "sepal width (cm)",
+    "petal length (cm)",
+    "petal width (cm)"
+  ],
+  "target_names": [
+    "setosa",
+    "versicolor",
+    "virginica"
+  ],
+  "trained_at": "2025-11-24T12:52:39.872403Z",
+  "model_type": "RandomForestClassifier",
+  "notes": "Iris demo model - replace with your real schema later."
+}
