@@ -1,7 +1,27 @@
 # File: src/ml/inference.py
 import argparse, json, hashlib, os
 from datetime import datetime
-import joblib, numpy as np, pandas as pd
+
+# Import optional heavy deps with graceful fallback for editors/CI that
+# can't resolve the packages. At runtime we raise a clear ImportError
+# telling the user how to install the missing package.
+try:
+    import joblib  # type: ignore
+except Exception as _e:  # pragma: no cover - runtime/import fallback
+    joblib = None
+    _joblib_import_error = _e
+
+try:
+    import numpy as np  # type: ignore
+except Exception as _e:  # pragma: no cover - runtime/import fallback
+    np = None
+    _numpy_import_error = _e
+
+try:
+    import pandas as pd  # type: ignore
+except Exception as _e:  # pragma: no cover - runtime/import fallback
+    pd = None
+    _pandas_import_error = _e
 
 MODEL_PATH = "models/checkpoints/model.joblib"
 METADATA_PATH = "models/metadata.json"
@@ -10,6 +30,16 @@ LOG_PATH = os.path.join(LOG_DIR, "inference.log")
 
 class InferenceModel:
     def __init__(self, model_path, features):
+        # Ensure required runtime dependencies are present
+        if joblib is None:
+            raise ImportError(
+                "joblib is required to load the model. Install with: pip install joblib"
+            )
+        if np is None:
+            raise ImportError(
+                "numpy is required for inference. Install with: pip install numpy"
+            )
+
         self.model_path = model_path
         self.features = features
         self.model = joblib.load(model_path)
@@ -20,6 +50,9 @@ class InferenceModel:
         return self.model.predict(aligned)
 
     def _align_columns(self, df):
+        if np is None:
+            raise ImportError("numpy is required for _align_columns")
+
         for c in [f for f in self.features if f not in df.columns]:
             df[c] = np.nan
         df = df[[c for c in self.features if c in df.columns]]
@@ -56,7 +89,11 @@ def parse_args():
     return p.parse_args()
 
 def build_input_dataframe(inputs, features):
-    if not inputs: raise ValueError("No inputs provided")
+    if pd is None:
+        raise ImportError("pandas is required to build input dataframes. Install with: pip install pandas")
+
+    if not inputs:
+        raise ValueError("No inputs provided")
     if inputs[0].lower().endswith(".csv"):
         return pd.read_csv(inputs[0])
     values = [float(x) for x in inputs]
