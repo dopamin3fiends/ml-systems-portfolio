@@ -1,68 +1,91 @@
-# ML Systems Portfolio
+# ML Systems Portfolio 🧩
 
-## Overview
-The ML Systems Portfolio is a comprehensive project that showcases various machine learning and backend development techniques. It includes a structured approach to building, training, and deploying machine learning models, along with a robust backend application for serving these models.
+[![Python](https://img.shields.io/badge/python-3.10%2B-blue.svg)](https://www.python.org/)
+[![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg)]()
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Audit-Safe](https://img.shields.io/badge/audit-safe-lightgrey.svg)]()
+[![Reproducible](https://img.shields.io/badge/reproducible-yes-success.svg)]()
 
-## Project Structure
+A modular, audit‑safe machine learning scaffold for reproducible experiments, teaching assets, and legacy‑grade workflows.
+
+---
+
+## 📖 Overview
+This project demonstrates how to build ML systems that are not just functional, but **legacy‑grade**: reproducible, transparent, and modular.  
+It includes training, inference, metadata, and audit logging — all designed for clarity, compliance, and extensibility.
+
+---
+
+## ⚙️ Features
+- **Training pipeline**: Builds and evaluates models, saves checkpoints, and writes metadata with feature schema + labels.
+- **Inference pipeline**: Supports single‑sample and batch CSV predictions, mapping outputs to human‑readable labels.
+- **Audit logging**: Every run is logged with timestamp, model hash, and inputs for compliance and reproducibility.
+- **Workspace structure**: Clean modular folders (`src/`, `models/`, `data/`, `outputs/`, `logs/`, `notebooks/`, `tests`).
+- **Extensible design**: Swap datasets, add visualization scripts, or wrap inference in an API layer.
+
+---
+
+## 📦 Installation
+Clone the repo and install dependencies:
+
+```bash
+git clone https://github.com/dopamin3fiends/ml-systems-portfolio
+cd ml-systems-portfolio
+pip install -r requirements.txt
 ```
-ml-systems-portfolio
-├── src
-│   ├── backend          # Backend application code
-│   ├── ml               # Machine learning code
-│   ├── data             # Data loading and processing
-│   └── scripts          # Utility scripts for ETL and deployment
-├── notebooks            # Jupyter notebooks for exploration
-├── experiments          # Directory for experiment files
-├── models               # Model checkpoints
-├── data                 # Raw and processed datasets
-├── infra                # Infrastructure as code
-├── tests                # Unit and integration tests
-├── .github              # GitHub workflows
-├── .gitignore           # Git ignore file
-├── Makefile             # Build and management commands
-├── pyproject.toml       # Python project configuration
-├── requirements.txt     # Python dependencies
-├── package.json         # NPM configuration
-├── LICENSE              # Licensing information
-└── README.md            # Project documentation
+
+---
+
+## 🚀 Usage
+
+### Train a model
+```bash
+python src/ml/training.py
 ```
 
-## Getting Started
-To set up the project locally, follow these steps:
+### Run single inference
+```bash
+python src/ml/inference.py 5.1 3.5 1.4 0.2
+```
 
-1. **Clone the repository:**
-   ```
-   git clone <repository-url>
-   cd ml-systems-portfolio
-   ```
+### Run batch inference
+```bash
+python src/ml/inference.py data/new_inputs.csv --output outputs/predictions.csv
+```
 
-2. **Install dependencies:**
-   For Python dependencies, run:
-   ```
-   pip install -r requirements.txt
-   ```
+Predictions and labels will be written to `outputs/predictions.csv` and logged in `logs/inference.log`.
 
-   For frontend dependencies (if applicable), run:
-   ```
-   npm install
-   ```
+---
 
-3. **Run the backend application:**
-   Navigate to the `src/backend` directory and run:
-   ```
-   python app.py
-   ```
+## 🧪 Project Structure
+```
+ml-systems-portfolio/
+├── src/ml/              # Training & inference scripts
+├── models/              # Checkpoints + metadata
+├── data/                # Raw & processed datasets
+├── outputs/             # Predictions
+├── logs/                # Audit logs
+├── notebooks/           # Jupyter notebooks
+├── tests/               # Unit tests
+├── requirements.txt     # Dependencies
+└── README.md            # Documentation
+```
 
-4. **Access the application:**
-   Open your web browser and go to `http://localhost:5000` (or the appropriate port).
+---
 
-## Usage
-- Explore the Jupyter notebooks in the `notebooks` directory for data analysis and experimentation.
-- Use the scripts in the `src/scripts` directory for ETL processes and model deployment.
-- Check the `tests` directory for unit and integration tests to ensure code quality.
+## 🎯 Roadmap
+- Add model versioning (timestamped checkpoints)
+- Build visualization scripts (confusion matrix, feature importance)
+- Optional API layer (Flask/FastAPI)
+- Package with frozen requirements + reproducibility docs
 
-## Contribution
-Contributions are welcome! Please follow the standard GitHub workflow for submitting issues and pull requests.
+---
 
-## License
-This project is licensed under the MIT License. See the LICENSE file for more details.
+## 🏛️ Legacy Note
+This portfolio is part of a broader **Legacy Journal** initiative — every commit, dataset, and prediction is treated as a legacy‑grade artifact. The goal is not just to build ML systems, but to **engineer clarity, compliance, and teaching assets** that last.
+
+---
+
+## 📜 License
+MIT License — free to use, modify, and distribute with attribution.
+
