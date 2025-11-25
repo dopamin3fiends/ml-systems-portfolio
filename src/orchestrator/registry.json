@@ -1,0 +1,154 @@
+{
+  "tools": {
+    "cookie_parser": {
+      "id": "cookie_parser",
+      "name": "Cookie Parser & Audit",
+      "description": "Extracts and audits browser cookies for forensic analysis",
+      "command": ["python", "-c", "print('Cookie Parser: parsing browser artifacts...')"],
+      "args_template": ["{input}", "--output", "{output}"],
+      "category": "forensics",
+      "trusted": true,
+      "version": "1.0.0"
+    },
+    "procexp": {
+      "id": "procexp",
+      "name": "Process Explorer (procexp.exe)",
+      "description": "Captures running processes and system state",
+      "command": ["python", "-c", "print('ProcExp: capturing process tree...')"],
+      "args_template": ["{output}"],
+      "category": "forensics",
+      "trusted": true,
+      "version": "1.0.0"
+    },
+    "cmd_unlock": {
+      "id": "cmd_unlock",
+      "name": "CMD Unlock",
+      "description": "Forensic extraction tool for command history",
+      "command": ["python", "-c", "print('CMD Unlock: extracting command history...')"],
+      "args_template": ["{input}", "--out", "{output}"],
+      "category": "forensics",
+      "trusted": true,
+      "version": "1.0.0"
+    },
+    "audit_extractor": {
+      "id": "audit_extractor",
+      "name": "Audit Extractor",
+      "description": "Extracts Windows audit logs for threat analysis",
+      "command": ["python", "-c", "print('Audit Extractor: parsing Windows logs...')"],
+      "args_template": ["{output}"],
+      "category": "forensics",
+      "trusted": true,
+      "version": "1.0.0"
+    },
+    "pathpulse": {
+      "id": "pathpulse",
+      "name": "PathPulse",
+      "description": "Tracks file system modifications and access patterns",
+      "command": ["python", "-c", "print('PathPulse: monitoring file system...')"],
+      "args_template": ["{input}", "--track", "{output}"],
+      "category": "monitoring",
+      "trusted": true,
+      "version": "1.0.0"
+    },
+    "fooocus": {
+      "id": "fooocus",
+      "name": "Fooocus",
+      "description": "AI-powered threat pattern recognition",
+      "command": ["python", "-c", "print('Fooocus: analyzing threat patterns...')"],
+      "args_template": ["{input}", "--analyze", "{output}"],
+      "category": "analysis",
+      "trusted": true,
+      "version": "1.0.0"
+    },
+    "legacy_automation": {
+      "id": "legacy_automation",
+      "name": "Legacy Automation",
+      "description": "Automates legacy system interactions",
+      "command": ["python", "-c", "print('Legacy Automation: executing workflow...')"],
+      "args_template": ["{input}", "--run", "{output}"],
+      "category": "automation",
+      "trusted": true,
+      "version": "1.0.0"
+    },
+    "traffic_bot_scripts": {
+      "id": "traffic_bot_scripts",
+      "name": "Traffic Bot Scripts",
+      "description": "Network traffic analysis and simulation",
+      "command": ["python", "-c", "print('Traffic Bot: analyzing network flow...')"],
+      "args_template": ["{input}", "--simulate", "{output}"],
+      "category": "network",
+      "trusted": false,
+      "version": "1.0.0"
+    },
+    "dropshipping_domination": {
+      "id": "dropshipping_domination",
+      "name": "Dropshipping Domination",
+      "description": "E-commerce trend analysis and forecasting",
+      "command": ["python", "-c", "print('Dropshipping: analyzing trends...')"],
+      "args_template": ["{input}", "--forecast", "{output}"],
+      "category": "ecommerce",
+      "trusted": true,
+      "version": "1.0.0"
+    },
+    "twitter_personality": {
+      "id": "twitter_personality",
+      "name": "Twitter Personality Analyzer",
+      "description": "Analyzes social media personas and influence patterns",
+      "command": ["python", "-c", "print('Twitter Analyzer: profiling account...')"],
+      "args_template": ["{input}", "--analyze", "{output}"],
+      "category": "social_analysis",
+      "trusted": true,
+      "version": "1.0.0"
+    },
+    "instagram_reel_creator": {
+      "id": "instagram_reel_creator",
+      "name": "Instagram Reel Creator",
+      "description": "Generates optimized Instagram content",
+      "command": ["python", "-c", "print('Instagram: creating reel metadata...')"],
+      "args_template": ["{input}", "--create", "{output}"],
+      "category": "content_gen",
+      "trusted": true,
+      "version": "1.0.0"
+    },
+    "form_creator": {
+      "id": "form_creator",
+      "name": "Form Creator",
+      "description": "Generates dynamic forms for data collection",
+      "command": ["python", "-c", "print('Form Creator: generating schema...')"],
+      "args_template": ["{input}", "--schema", "{output}"],
+      "category": "automation",
+      "trusted": true,
+      "version": "1.0.0"
+    },
+    "proxiesources": {
+      "id": "proxiesources",
+      "name": "Proxy Sources",
+      "description": "Aggregates and validates proxy lists",
+      "command": ["python", "-c", "print('ProxySources: fetching proxies...')"],
+      "args_template": ["--list", "{output}"],
+      "category": "network",
+      "trusted": false,
+      "version": "1.0.0"
+    },
+    "cc_generator": {
+      "id": "cc_generator",
+      "name": "CC Generator",
+      "description": "Generates test credit card patterns (educational only)",
+      "command": ["python", "-c", "print('CC Generator: creating test patterns...')"],
+      "args_template": ["--educate", "{output}"],
+      "category": "fraud_education",
+      "trusted": true,
+      "version": "1.0.0"
+    },
+    "adb": {
+      "id": "adb",
+      "name": "Android Debug Bridge (ADB)",
+      "description": "Mobile device forensics and debugging",
+      "command": ["python", "-c", "print('ADB: connecting to device...')"],
+      "args_template": ["{input}", "--devices", "{output}"],
+      "category": "mobile_forensics",
+      "trusted": true,
+      "version": "1.0.0"
+    }
+  }
+}
