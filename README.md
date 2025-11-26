@@ -73,11 +73,33 @@ ml-systems-portfolio/
 
 ---
 
+## 💎 Support This Project
+
+**Like what you see?** Get the complete Professional Automation Toolkit:
+
+[![Get on Gumroad](https://img.shields.io/badge/Get_on-Gumroad-FF90E8?style=for-the-badge&logo=gumroad&logoColor=white)](https://dopaminefiends.gumroad.com/l/devtools)
+
+**🎁 Use code `LAUNCH20` for 20% off (limited time)**
+
+### What's Included:
+- ✅ **6 Production-Ready Tools** (6,877 lines of code)
+- ✅ **REST API Orchestrator** (FastAPI-based)
+- ✅ **Web Dashboard** (Visual monitoring)
+- ✅ **Complete Documentation** (7 comprehensive READMEs)
+- ✅ **CI/CD Pipeline** (GitHub Actions)
+- ✅ **30-Day Money-Back Guarantee**
+
+**Pricing:** $29 (Starter) | $79 (Professional) | $299 (Enterprise)
+
+**Why buy when it's on GitHub?** Pre-configured package, professional support, lifetime updates, commercial clarity, and you're funding future development. Think: Linux is free, Red Hat makes billions. 🚀
+
+---
+
 ## 🎯 Roadmap
 - Add model versioning (timestamped checkpoints)
 - Build visualization scripts (confusion matrix, feature importance)
-- Optional API layer (Flask/FastAPI)
-- Package with frozen requirements + reproducibility docs
+- Expand automation toolkit (new tools added monthly)
+- Enhanced orchestrator features (scheduling, webhooks)
 
 ---
 
