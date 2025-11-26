@@ -209,6 +209,23 @@
       },
       "presets": ["dev_tools", "virtualization", "networking", "security", "legacy"],
       "requires_admin": true
+    },
+    "web_automation": {
+      "id": "web_automation",
+      "name": "Web Automation Framework",
+      "description": "Professional browser automation for testing, QA workflows, and web scraping. Multi-browser support (Chrome, Firefox, Edge), headless execution, preset workflows (health_check, form_test, page_scrape, link_checker), screenshot capture, data extraction.",
+      "command": ["python", "tools/web_automation/cli.py"],
+      "args_template": ["preset", "{preset}", "--context", "url={url}"],
+      "category": "automation",
+      "trusted": true,
+      "version": "1.0.0",
+      "demo_mode": {
+        "enabled": true,
+        "command": ["python", "tools/web_automation/cli.py", "demo"],
+        "description": "Navigates to example.com, captures screenshot, extracts page title"
+      },
+      "presets": ["health_check", "form_test", "page_scrape", "link_checker"],
+      "requires_selenium": true
     }
   }
 }
