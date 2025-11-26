@@ -226,6 +226,23 @@
       },
       "presets": ["health_check", "form_test", "page_scrape", "link_checker"],
       "requires_selenium": true
+    },
+    "adb_automation": {
+      "id": "adb_automation",
+      "name": "ADB Automation Framework",
+      "description": "Professional Android device automation and management. Device discovery, app control (install/uninstall/start/stop), file transfer, screen capture, input simulation (tap/swipe/text), shell commands, preset tasks (device_info, app_launch_test, screenshot_sequence, ui_interaction, battery_monitor).",
+      "command": ["python", "tools/adb_automation/cli.py"],
+      "args_template": ["task", "{task}", "--context", "package_name={package}"],
+      "category": "automation",
+      "trusted": true,
+      "version": "1.0.0",
+      "demo_mode": {
+        "enabled": true,
+        "command": ["python", "tools/adb_automation/cli.py", "demo"],
+        "description": "Shows connected devices with model, Android version, battery, screen resolution"
+      },
+      "presets": ["device_info", "app_launch_test", "screenshot_sequence", "ui_interaction", "battery_monitor"],
+      "requires_adb": true
     }
   }
 }
