@@ -176,6 +176,22 @@
       "category": "forensics",
       "trusted": true,
       "version": "2.0.0"
+    },
+    "pathpulse": {
+      "id": "pathpulse",
+      "name": "PathPulse File System Monitor",
+      "description": "Real-time file system monitoring with threat pattern detection. Detects ransomware, mass deletion, suspicious executables, sensitive file access. Auto risk assessment.",
+      "command": ["python", "tools/pathpulse/cli.py", "monitor"],
+      "args_template": ["{path}", "--duration", "{duration}", "--recursive"],
+      "category": "forensics",
+      "trusted": true,
+      "version": "1.0.0",
+      "demo_mode": {
+        "enabled": true,
+        "command": ["python", "tools/pathpulse/cli.py", "demo"],
+        "description": "Simulates file events and detects patterns in temporary directory"
+      },
+      "threat_patterns": ["mass_deletion", "ransomware_encryption", "rapid_file_creation", "system_file_tampering", "sensitive_file_access", "unusual_extensions"]
     }
   }
 }
