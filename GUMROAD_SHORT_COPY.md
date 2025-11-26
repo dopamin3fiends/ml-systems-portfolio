@@ -16,6 +16,23 @@
 
 **Stop juggling scattered scripts. Get 6 production-ready tools + orchestration platform.**
 
+## ⚠️ Why Buy When It's On GitHub?
+
+**Yes, the code is open source!** But here's what you get with purchase:
+
+✅ **Clean Package** - Pre-configured and tested, not raw code  
+✅ **Professional Support** - Email help within 48 hours  
+✅ **Lifetime Updates** - New tools and features included  
+✅ **Complete Docs** - Full guides, not just comments  
+✅ **Commercial Clarity** - No license confusion  
+✅ **Support Development** - Fund future improvements  
+
+**Think:** Linux is free, Red Hat makes billions. You're paying for expertise, packaging, and peace of mind.
+
+**Try it first?** Clone from GitHub! If you like it, come back and support the project. 🙏
+
+---
+
 ## What You Get
 
 ### 🔧 6 Professional Tools (6,877 Lines of Code)

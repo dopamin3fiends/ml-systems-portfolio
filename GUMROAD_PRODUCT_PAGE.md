@@ -53,6 +53,28 @@ Stop juggling dozens of scattered scripts and tools. Get a complete, professiona
 
 ---
 
+## ⚠️ Why Buy When It's On GitHub?
+
+**Great question!** Yes, the code is open source (MIT license) on GitHub. So why purchase?
+
+**Here's what you get with your purchase that GitHub doesn't provide:**
+
+✅ **Professional Package** - Pre-configured, tested, and ready to deploy (not raw code)  
+✅ **Priority Support** - Email help within 24-48 hours (Pro/Enterprise tiers)  
+✅ **Lifetime Updates** - New tools, features, and improvements delivered automatically  
+✅ **Complete Documentation** - Not just code comments - full guides, tutorials, examples  
+✅ **Demo Workflows** - Pre-built automation examples you can use immediately  
+✅ **Commercial License Clarity** - No legal ambiguity for business use  
+✅ **Training & Integration** - Direct access to the creator (Enterprise tier)  
+✅ **Support Development** - Help fund continued improvement and new tools  
+✅ **Peace of Mind** - Validated, tested, production-ready (not "clone and figure it out")  
+
+**Think of it this way:** Linux is free, but Red Hat makes billions selling packaging and support. WordPress is free, but premium themes make millions. The value isn't just the code—it's the **expertise, convenience, and confidence** that comes with it.
+
+**Not ready to buy?** Clone from GitHub and evaluate the quality yourself! If you find it valuable, come back and support the project. Either way, you're welcome to explore. 🙏
+
+---
+
 ## 💎 What Makes This Different?
 
 ### Not Just Scripts - Professional Software
