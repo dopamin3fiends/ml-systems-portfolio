@@ -192,6 +192,23 @@
         "description": "Simulates file events and detects patterns in temporary directory"
       },
       "threat_patterns": ["mass_deletion", "ransomware_encryption", "rapid_file_creation", "system_file_tampering", "sensitive_file_access", "unusual_extensions"]
+    },
+    "windows_features": {
+      "id": "windows_features",
+      "name": "Windows Feature Manager",
+      "description": "Professional Windows optional feature management. Enable/disable features, preset groups (dev_tools, virtualization, networking, security, legacy), backup/restore with rollback. Admin privilege validation.",
+      "command": ["python", "tools/windows_features/cli.py"],
+      "args_template": ["{operation}", "{feature_or_preset}"],
+      "category": "system",
+      "trusted": true,
+      "version": "1.0.0",
+      "demo_mode": {
+        "enabled": true,
+        "command": ["python", "tools/windows_features/cli.py", "demo"],
+        "description": "Shows system info, available features, presets without making changes"
+      },
+      "presets": ["dev_tools", "virtualization", "networking", "security", "legacy"],
+      "requires_admin": true
     }
   }
 }
