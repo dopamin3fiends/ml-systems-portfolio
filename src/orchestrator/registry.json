@@ -149,6 +149,33 @@
       "category": "mobile_forensics",
       "trusted": true,
       "version": "1.0.0"
+    },
+    "video_enhancement": {
+      "id": "video_enhancement",
+      "name": "Video Enhancement Suite",
+      "description": "Professional video processing queue with multi-backend support (Topaz/FFmpeg/HandBrake). Priority scheduling, concurrent processing, automatic retry.",
+      "command": ["python", "tools/video_enhancement/cli.py", "add"],
+      "args_template": ["{input}", "{output}", "--preset", "{preset}", "--priority", "{priority}"],
+      "category": "media",
+      "trusted": true,
+      "version": "1.0.0",
+      "demo_mode": {
+        "enabled": true,
+        "command": ["python", "tools/video_enhancement/cli.py", "demo"],
+        "description": "Creates 3 demo jobs: 4K upscale, denoise, compress with priority scheduling"
+      },
+      "presets": ["upscale_2x", "upscale_4x", "denoise", "sharpen", "compress"],
+      "priorities": ["low", "medium", "high", "critical"]
+    },
+    "cookie_parser_demo": {
+      "id": "cookie_parser_demo",
+      "name": "Cookie Analysis Suite (Demo)",
+      "description": "Forensic cookie analysis: parse, enrich, scan, report. Demo generates 5 sample cookies.",
+      "command": ["python", "tools/cookie_analysis/cli.py", "--demo"],
+      "args_template": ["--output-dir", "{output}"],
+      "category": "forensics",
+      "trusted": true,
+      "version": "2.0.0"
     }
   }
 }
