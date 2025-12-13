@@ -220,3 +220,20 @@ dist/license_keys*.json
 report.html
 output/
 outputs/
+
+# API Keys and Sensitive Data
+harvester.txt
+*.env
+.env.*
+!.env.example
+api-keys.yaml
+*api-keys*.yaml
+
+# Cookie and session data
+data/tmp/
+*cookie*.txt
+*token*.txt
+*session*.txt
+
+# Git history cleanup
+.git-rewrite/
