@@ -1,0 +1,97 @@
+WHAT YOU'LL GET:
+
+🔍 Core Features:
+• Email Intelligence - Validate and analyze email addresses
+• Username Search - Search 20+ platforms (GitHub, Twitter, Reddit, Instagram, etc.)
+• Data Breach Check - Have I Been Pwned integration
+• WHOIS Lookup - Domain registration intelligence
+• Phone Lookup - Reverse phone searches across 10+ sites
+• 104 OSINT Resources - Curated database organized in 11 categories
+• Auto-Search - Automatically search multiple sites simultaneously
+
+💎 Pro Features:
+• PDF Reports - Professional, shareable reports (no watermarks)
+• Bulk Search - Process CSV/JSON files with hundreds of targets
+• HTML Reports - Clean output without "Free Version" watermarks
+• Commercial License - Use in business, consulting, or client work
+• Priority Email Support - Get help within 24 hours
+• Lifetime Updates - All future Pro features included forever
+
+📦 What's Included:
+• osint-tool-pro.exe - Windows executable (no Python needed)
+• Your unique license key for instant activation
+• Complete documentation and usage guide
+• Sample reports and templates
+• Bonus: OSINT Methodology Guide (PDF)
+• Bonus: 104 Resources Cheat Sheet (PDF)
+• Commercial use license
+
+🎯 Perfect For:
+• Security researchers doing bug bounty reconnaissance
+• Private investigators conducting background checks
+• Corporate security teams verifying employees
+• Journalists fact-checking sources
+• Law enforcement gathering legal intelligence
+• Penetration testers in initial recon phase
+• Compliance officers assessing risk
+
+💻 System Requirements:
+• Windows 10/11 (64-bit)
+• 50MB disk space
+• Internet connection required
+• Optional: Python 3.8+ for source code version
+• Note: Mac/Linux users can use included Python source
+
+📚 104 OSINT Resources Across 11 Categories:
+• US People Search (24) - Spokeo, Pipl, WhitePages, BeenVerified
+• International Search (10) - 192.com, Infobel, Canada411
+• Phone Lookup (10) - TrueCaller, SpyDialer, Sync.ME
+• Username Search (4) - Sherlock, WhatsMyName, Namechk
+• Image Search (4) - TinEye, Google Reverse Image, Yandex
+• Email Search (7) - Hunter.io, EmailRep, Clearbit
+• Social Media (10) - Social Searcher, Mention, Brand24
+• Breach Databases (7) - HIBP, DeHashed, LeakCheck
+• IP Tools (16) - Shodan, Censys, IPVoid, AbuseIPDB
+• Criminal Records (7) - NSOPW, VINELink, BOP Inmate
+• OSINT Frameworks (5) - Maltego, Recon-ng, SpiderFoot
+
+🚀 Quick Start:
+1. Download the .exe and your license key
+2. Run: osint-tool-pro.exe activate YOUR_LICENSE_KEY
+3. Start investigating: osint-tool-pro.exe full target@email.com --report pdf
+That's it! Professional reports in seconds.
+
+🆓 Free vs Pro:
+Free version available on GitHub with all core features but watermarked reports and no bulk search. Pro removes watermarks, adds PDF reports, bulk processing, and includes commercial license for business use.
+
+Free GitHub: https://github.com/dopamin3fiends/ml-systems-portfolio
+
+🔒 Legal & Ethical Use:
+This tool is for legitimate security research, investigation, and business purposes only.
+
+✅ Acceptable: Security research, background checks (with consent), employee verification, threat intelligence, journalism, personal privacy audits
+
+❌ Prohibited: Stalking, harassment, identity theft, unauthorized surveillance, violating privacy laws (GDPR, CCPA), any illegal activities
+
+By purchasing, you agree to use this tool ethically and legally.
+
+🛡️ Guarantee:
+30-day money-back guarantee. If you're not completely satisfied, email for a full refund, no questions asked.
+
+📧 Support:
+Pro customers get priority email support with responses within 24 hours.
+
+🎁 Launch Special:
+Regular price: $29.99
+Launch price: $19.99 (33% off)
+Includes bonus guides worth $14.98
+
+Early adopters also get:
+• Free upgrade to Pro v2.0 when released
+• Input on new features
+• Early access to beta features
+
+One-time payment. No subscription. Use forever.
+
+Built by a security researcher, for security researchers.
+Version 1.0.0 | November 2025

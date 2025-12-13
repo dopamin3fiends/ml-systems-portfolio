@@ -1,0 +1,14 @@
+{
+  "initial_query": "dopaminefiends",
+  "type": "username",
+  "max_depth": 2,
+  "timestamp": "2025-11-30T19:32:45.897589",
+  "discoveries": {
+    "names": [],
+    "emails": [],
+    "phones": [],
+    "usernames": [],
+    "addresses": []
+  },
+  "total_queries": 0
+}

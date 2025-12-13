@@ -1,0 +1,71 @@
+{
+  "query": "kurtwarner.com@gmail.com",
+  "type": "email",
+  "timestamp": "2025-11-30T19:31:22.015764",
+  "scraper_results": {
+    "query": {
+      "name": null,
+      "email": "kurtwarner.com@gmail.com",
+      "phone": null,
+      "location": null
+    },
+    "sources": [
+      {
+        "source": "Intelius",
+        "data": {}
+      },
+      {
+        "source": "TruthFinder",
+        "data": {}
+      },
+      {
+        "source": "BeenVerified",
+        "data": {}
+      },
+      {
+        "source": "Censys",
+        "data": {}
+      },
+      {
+        "source": "Clearbit",
+        "data": {}
+      },
+      {
+        "source": "Spokeo",
+        "data": {}
+      },
+      {
+        "source": "DeHashed",
+        "data": {}
+      },
+      {
+        "source": "Shodan",
+        "data": {}
+      },
+      {
+        "source": "Hunter.io",
+        "data": {
+          "domain": "gmail.com"
+        }
+      },
+      {
+        "source": "EmailRep",
+        "data": {
+          "status": "Reputation data available",
+          "risk": "Suspicious activity detected"
+        }
+      },
+      {
+        "source": "Pipl",
+        "data": {}
+      }
+    ],
+    "summary": {
+      "total_sources_checked": 11,
+      "sources_with_data": 2,
+      "data_points_found": 3,
+      "sources_with_errors": 0
+    }
+  },
+  "api_results": null
+}
